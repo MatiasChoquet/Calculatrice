@@ -20,11 +20,22 @@ Erreur = 0
 string_variable = tk.StringVar()
 string_variable.set(Donnée)
 
+def police(police):
+    if len(police) > 15:
+        return float(len(police)/1.05)
+    else:
+        return 36
 
 def set0():
     Donnée = " "
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
+    label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
+
+def set0bis():
+    Donnée = " "
+    string_variable.set(Donnée)
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add1():
@@ -38,7 +49,7 @@ def add1():
     Donnée = string_variable.get()
     Donnée += "1"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
     
 
@@ -53,7 +64,7 @@ def add2():
     Donnée = string_variable.get()
     Donnée += "2"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
     
 
@@ -68,7 +79,7 @@ def add3():
     Donnée = string_variable.get()
     Donnée += "3"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add4():
@@ -82,7 +93,7 @@ def add4():
     Donnée = string_variable.get()
     Donnée += "4"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add5():
@@ -96,7 +107,7 @@ def add5():
     Donnée = string_variable.get()
     Donnée += "5"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add6():
@@ -110,7 +121,7 @@ def add6():
     Donnée = string_variable.get()
     Donnée += "6"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add7():
@@ -124,7 +135,7 @@ def add7():
     Donnée = string_variable.get()
     Donnée += "7"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add8():
@@ -138,7 +149,7 @@ def add8():
     Donnée = string_variable.get()
     Donnée += "8"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add9():
@@ -152,7 +163,7 @@ def add9():
     Donnée = string_variable.get()
     Donnée += "9"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def add0():
@@ -166,7 +177,7 @@ def add0():
     Donnée = string_variable.get()
     Donnée += "0"
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def addpoint():
@@ -180,7 +191,7 @@ def addpoint():
     Donnée = string_variable.get()
     Donnée += "."
     string_variable.set(Donnée)
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 def Last_Order_Change():
@@ -198,9 +209,10 @@ def Last_Order_Change():
         else:
             Result /= InMemory[-1]
     elif Last_Order == "Puissance":
-        a = Result
-        for i in range(int(InMemory[-1])-1):
-            Result *= a
+        try:
+            Result **= InMemory[-1]
+        except OverflowError:
+            InMemory, Basic, Erreur, Reset = [], [], 2, 1
     else:
         Result += InMemory[-1]
     
@@ -249,16 +261,18 @@ def equal():
     Last_Order = "None"
     if Erreur == 0:
         string_variable.set(str(round(Result,3)))
-    else:
-        string_variable.set("Error")
-    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
+    elif Erreur == 1:
+        string_variable.set("Division by 0 is impossible")
+    elif Erreur == 2:
+        string_variable.set('Error, number too large')
+    label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', police(string_variable.get())))
     label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
     InMemory, Basic, Result, Reset, Erreur = [], [], 0, 1, 0
 
 
 
 #def grille
-Fenetre.grid_rowconfigure(0, weight=5)
+Fenetre.grid_rowconfigure(0, weight=6)
 Fenetre.grid_rowconfigure(1, weight=1)
 Fenetre.grid_rowconfigure(2, weight=1)
 Fenetre.grid_rowconfigure(3, weight=1)
@@ -271,8 +285,8 @@ Fenetre.grid_columnconfigure(1, weight=1, uniform="same_group")
 Fenetre.grid_columnconfigure(2, weight=1, uniform="same_group")
 Fenetre.grid_columnconfigure(3, weight=1, uniform="same_group")
 
-label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 40))
-label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew', )
+label = customtkinter.CTkLabel(master= Fenetre,text=string_variable.get(), anchor='se', corner_radius=10,font=('Arial', 36), wraplength=72)
+label.grid(column=0, row=0, columnspan= 4, padx = 15, pady = 15, sticky='nsew')
 
 b1=customtkinter.CTkButton(Fenetre, text ="C", font=('Arial', 25, "bold"), command=set0)
 b1.grid(column=0, row=1, padx=10, pady=15, sticky='nesw')
@@ -322,6 +336,6 @@ b18.grid(column=2, row=5, padx=10, pady=15, sticky='nesw')
 
 
 Fenetre.geometry("400x550")
+Fenetre.resizable(False, False)
 
 Fenetre.mainloop()
-
